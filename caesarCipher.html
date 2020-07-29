@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" type="text/css" href="css.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <header>
+        <img src="caesarSVG.svg" alt="caesar icon" />
+        <h1>
+          <span class="bold">C</span>aesar <span class="bold">C</span>ipher
+          <span class="bold">G</span>enerator
+        </h1>
+      </header>
+
+      <main>
+        <div class="center">
+          <div class="blueRectangle"></div>
+        </div>
+
+        <div class="boxContainer">
+          <div class="box boxFirst">
+            <h2>Text to Encode/Decode</h2>
+            <textarea
+              rows="5"
+              cols="50"
+              name="description"
+              class="textToEncode"
+              id="plainText"
+            >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dignissimos quae! Nemo optio laboriosam aliquid iste architecto consequatur corporis vitae!</textarea
+            >
+          </div>
+
+          <div class="middleBox">
+            <div class="optionContainer">
+              <div class="optionChoice">
+                <span id="encodeOption" class="highlight">Encode</span>
+              </div>
+              <div class="optionChoice">
+                <span id="decodeOption">Decode</span>
+              </div>
+            </div>
+
+            <div class="shiftContainer">
+              <h3>Shift Number</h3>
+              <div class="plusMinusContainer">
+                <div class="signRectangle">
+                  <span id="clickableSpanMinus"
+                    ><i class="fas fa-minus-circle"></i
+                  ></span>
+                </div>
+                <div class="shiftNumber" id="shiftValue">23</div>
+                <div class="signRectangle">
+                  <span id="clickableSpanPlus"
+                    ><i class="fas fa-plus-circle"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box boxThird">
+            <h2>Your result</h2>
+            <textarea
+              rows="5"
+              cols="50"
+              name="description"
+              class="textToEncode"
+              id="encodedText"
+              readonly
+            ></textarea>
+          </div>
+        </div>
+        <img class="waveImg" src="waveImg.png" alt="waveImg" />
+      </main>
+
+      <div class="summary">
+        <div>
+          Caesar cipher: Encode and decode online Method in which each letter in
+          the plaintext is replaced by a letter some fixed number of positions
+          down the alphabet. The method is named after Julius Caesar, who used
+          it in his private correspondence.
+          <button>
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Caesar_cipher"
+              >Read More</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Rafał Tutak &copy 2020
+    </footer>
+  </body>
+
+  <script src="js.js"></script>
+</html>
